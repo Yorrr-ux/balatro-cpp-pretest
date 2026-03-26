@@ -11,5 +11,9 @@ public:
     void addCard(const Card& card);
     void clear();
     const std::vector<Card>& getCards() const;
+    int size() const;
+    bool isValidIndex(int index) const;
+    Card removeCardAt(int index);
     std::string toString() const;
+    std::string toIndexedString() const;
 };
